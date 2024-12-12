@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+</head>
+<body>
+<h1>Create New User</h1>
+<form action="/registrasi/" method="post">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="gmail">Email:</label>
+        <input type="gmail" id="gmail" name="gmail" required>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+        <label for="agama">Agama:</label>
+        <input type="text" id="agama" name="agama" required>
+    </div>
+    <div>
+        <label for="statusPerkawinan">Status Perkawinan:</label>
+        <select id="statusPerkawinan" name="statusPerkawinan" required>
+            <option value="">--Select--</option>
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Divorced">Divorced</option>
+            <option value="Widowed">Widowed</option>
+        </select>
+    </div>
+    <div>
+        <label for="createdAt">Created At:</label>
+        <input type="datetime-local" id="createdAt" name="createdAt" required>
+    </div>
+    <div>
+        <label for="createdBy">Created By:</label>
+        <input type="text" id="createdBy" name="createdBy" required>
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+</body>
+</html>

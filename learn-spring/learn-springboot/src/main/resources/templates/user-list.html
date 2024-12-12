@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail pengguna</title>
+</head>
+
+<body>
+<h2>Daftar pengguna</h2>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>name</th>
+    <th>gmail</th>
+    <th>password</th>
+  </tr>
+
+  <tr :each="user : ${users}">
+    <td :text=${user.Id}"</td>
+    <td :text=${user.name}"></td>
+    <td :text=${user.gmail}"></td>
+    <td :text=${user.password}"></td>
+    <td>
+      <a th:href="@{/users/{userId}(Id=${user.Id})}">Details</a>
+    </td>
+  </tr>
+</table>
+<a href="/users/new">Create new user</a>
+</body>
+
+</html>
